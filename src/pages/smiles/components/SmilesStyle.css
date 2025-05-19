@@ -1,0 +1,32 @@
+.container{
+    margin: auto;
+    text-align: center;
+}
+.smiles-list{
+    max-width: 600px;
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+}
+.smile-item span{
+    font-size: 40px;
+}
+.smile-item{
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+}
+button{
+    margin: 40px 10px;
+    padding: 10px;
+    color: white;
+    background-color: #261EC7;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 1px 1px 16px rgba(0, 0, 0, 0.4);
+}
+ul{
+    list-style: none;
+}
+
+
