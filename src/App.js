@@ -1,7 +1,7 @@
+import Smiles from "./pages/smiles";
 function App() {
   return (
-    <div>
-    </div>
+      <Smiles />
   );
 }
 
