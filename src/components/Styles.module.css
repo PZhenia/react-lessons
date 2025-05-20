@@ -1,0 +1,58 @@
+.header {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border-bottom: 1px solid #000000;
+}
+
+.footer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    border-top: 1px solid #000000;
+    border-bottom: 1px solid #000000;
+}
+
+.mode-light {
+    color: #000000;
+    background-color: #ffffff;
+}
+
+.mode-dark {
+    color: #ffffff;
+    background-color: #000000;
+}
+
+.container{
+    margin: auto;
+    text-align: center;
+}
+.smilesList{
+    max-width: 800px;
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+}
+.smileItem span{
+    font-size: 70px;
+}
+.smileItem{
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+}
+button{
+    margin: 40px 10px;
+    padding: 10px;
+    color: white;
+    background-color: #0E7301;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 1px 1px 16px rgba(0, 0, 0, 0.4);
+}
+ul{
+    list-style: none;
+}
