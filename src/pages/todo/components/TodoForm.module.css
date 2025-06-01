@@ -1,0 +1,16 @@
+.todoForm button {
+    margin: 20px 6px;
+}
+.todoForm input {
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+}
+
+.todoForm input:focus {
+    outline: none;
+}
+
+.todoForm p {
+    margin: 0 5px;
+}

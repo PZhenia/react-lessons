@@ -1,0 +1,11 @@
+.todoItem {
+    max-width: 300px;
+    padding: 10px 40px;
+    background-color: #A4D1A3;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.todoItem h4 {
+    margin: 0;
+}
