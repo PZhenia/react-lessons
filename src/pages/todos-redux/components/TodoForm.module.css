@@ -1,0 +1,13 @@
+.todoForm input {
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+}
+
+.todoForm input:focus {
+    outline: none;
+}
+
+.todoForm {
+    height: 80px;
+}
