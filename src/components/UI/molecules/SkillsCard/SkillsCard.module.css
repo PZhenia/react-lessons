@@ -1,0 +1,56 @@
+.card {
+    background: white;
+    border-radius: 16px;
+    padding: 30px;
+    height: 100%;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+}
+
+.cardHeader {
+    display: flex;
+    align-items: center;
+    margin-bottom: 25px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #eaeef5;
+}
+
+.icon {
+    font-size: 32px;
+    margin-right: 15px;
+}
+
+.title {
+    font-size: 24px;
+    color: #2c3e50;
+    margin: 0;
+}
+
+.skillsList {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 12px;
+}
+
+.skillItem {
+    font-size: 18px;
+    color: #34495e;
+    padding: 8px 0;
+    display: flex;
+    align-items: center;
+}
+
+.skillDot {
+    color: #a0c4e9;
+    font-size: 24px;
+    margin-right: 10px;
+    line-height: 1;
+}

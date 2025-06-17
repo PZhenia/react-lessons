@@ -1,0 +1,126 @@
+.container {
+    padding: 40px 20px;
+    background-color: #f8faff;
+    position: relative;
+    overflow: hidden;
+}
+
+.backgroundShape {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 40%;
+    height: 100%;
+    background: linear-gradient(135deg, #C6DDF7 0%, #a0c4e9 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 30% 100%);
+    z-index: 0;
+}
+
+.introRow {
+    margin-bottom: 40px;
+    position: relative;
+    z-index: 1;
+}
+
+.greetingContainer {
+    display: flex;
+    justify-content: center;
+}
+
+.greeting {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    max-width: 1000px;
+    width: 100%;
+    padding: 40px;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 20px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.greetingText {
+    flex: 1;
+    font-size: 18px;
+    line-height: 1.6;
+    color: #333;
+}
+
+.divider {
+    margin: 40px 0;
+    border-top: 1px solid #C6DDF7;
+    position: relative;
+    z-index: 1;
+}
+.photoContainer {
+    flex: 0 0 auto;
+    position: relative;
+    margin-right: 40px;
+    z-index: 1;
+}
+
+.photo {
+    width: 320px;
+    height: 420px;
+    object-fit: cover;
+    border-radius: 100px;
+    transform: rotate(-5deg);
+    position: relative;
+    z-index: 3;
+    filter: drop-shadow(2px 4px 6px rgba(0, 0, 0, 0.1));
+}
+
+.photoBgShape {
+    position: absolute;
+    top: -20px;
+    left: -20px;
+    width: 340px;
+    height: 440px;
+    background: linear-gradient(135deg, #a0c4e9 0%, #C6DDF7 100%);
+    border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+    transform: rotate(-5deg);
+    z-index: 2;
+    opacity: 0.7;
+    animation: shapePulse 8s ease-in-out infinite;
+}
+
+.photoDecor1 {
+    position: absolute;
+    top: -10px;
+    right: -30px;
+    width: 100px;
+    height: 100px;
+    background: rgba(198, 221, 247, 0.5);
+    border-radius: 50%;
+    z-index: 1;
+    animation: decorFloat 5s ease-in-out infinite alternate;
+}
+
+.photoDecor2 {
+    position: absolute;
+    bottom: -30px;
+    left: -20px;
+    width: 150px;
+    height: 80px;
+    background: rgba(160, 196, 233, 0.4);
+    border-radius: 40% 60% 60% 40% / 50%;
+    transform: rotate(15deg);
+    z-index: 1;
+    animation: decorScale 7s ease-in-out infinite;
+}
+
+@keyframes shapePulse {
+    0% { transform: rotate(-5deg) scale(1); }
+    50% { transform: rotate(-5deg) scale(1.05); }
+    100% { transform: rotate(-5deg) scale(1); }
+}
+
+@keyframes decorFloat {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-15px); }
+}
+
+@keyframes decorScale {
+    0%, 100% { transform: rotate(15deg) scale(1); }
+    50% { transform: rotate(15deg) scale(1.1); }
+}

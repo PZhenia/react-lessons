@@ -1,0 +1,75 @@
+.projectCard {
+    width: 100%;
+    height: 100%;
+    border-radius: 16px;
+    overflow: hidden;
+    border: none;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.projectCard:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.12);
+}
+
+.coverContainer {
+    position: relative;
+    height: 200px;
+    overflow: hidden;
+}
+
+.coverImg {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.projectCard:hover .coverImg {
+    transform: scale(1.05);
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.projectCard:hover .overlay {
+    opacity: 1;
+}
+
+.link {
+    color: white;
+    background: rgba(255, 255, 255, 0.2);
+    padding: 10px 20px;
+    border-radius: 20px;
+    border: 1px solid white;
+    text-decoration: none;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.link:hover {
+    background: rgba(255, 255, 255, 0.3);
+}
+
+.cardTitle {
+    font-size: 20px;
+    margin-bottom: 8px;
+    color: #2c3e50;
+}
+
+.cardDescription {
+    color: #7f8c8d;
+    font-size: 16px;
+}

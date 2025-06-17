@@ -1,0 +1,32 @@
+.projectsPage {
+    padding: 60px 20px;
+    background-color: #f8faff;
+    min-height: 100vh;
+}
+
+.pageTitle {
+    text-align: center;
+    margin-bottom: 50px;
+    font-size: 40px;
+    color: #2c3e50;
+    position: relative;
+}
+
+.pageTitle::after {
+    content: '';
+    display: block;
+    width: 80px;
+    height: 4px;
+    background: linear-gradient(to right, #a0c4e9, #C6DDF7);
+    margin: 15px auto 0;
+    border-radius: 2px;
+}
+
+.projectsRow {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.rowWrapper {
+    padding: 0 calc(50% - 600px);
+    width: 100%;
+}
