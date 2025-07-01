@@ -1,6 +1,10 @@
 import { Row, Col } from 'antd';
 import ProjectCard from '../../components/UI/molecules/ProjectCard';
 
+import cover1 from '../../assets/card-backgrounds/1.jpg';
+import cover2 from '../../assets/card-backgrounds/2.jpg';
+import cover3 from '../../assets/card-backgrounds/3.jpg';
+
 import styles from './projects.module.css';
 
 export default function Projects() {
@@ -19,7 +23,7 @@ export default function Projects() {
                                 UI за фіксованим макетом.'
                             cover={{
                                 alt: 'frontend-background',
-                                src: '/card-backgrounds/1.jpg',
+                                src: cover1,
                             }}
                             content='https://github.com/PZhenia/greenshop'
                         />
@@ -33,7 +37,7 @@ export default function Projects() {
                                 мене поєднувати стилізацію, бібліотеки та базову логіку у фронтенді.'
                             cover={{
                                 alt: 'frontend-background',
-                                src: '/card-backgrounds/2.jpg',
+                                src: cover2,
                             }}
                             content='https://github.com/PZhenia/hlegal'
                         />
@@ -49,7 +53,7 @@ export default function Projects() {
                                 знань і показав, як застосовувати сучасний стек технологій у реальному застосунку.'
                             cover={{
                                 alt: 'frontend-background',
-                                src: '/card-backgrounds/3.jpg',
+                                src: cover3,
                             }}
                             content='https://github.com/PZhenia/diploma'
                         />

@@ -2,9 +2,9 @@ import { Col } from 'antd';
 
 import styles from './SkillsCard.module.css';
 
-export default function SkillsCard({ title = 'title', skills = [], span = 12, icon = '🛠️' }) {
+export default function SkillsCard({ title = 'title', skills = [], icon = '🛠️' }) {
     return (
-        <Col span={span}>
+        <Col xs={24} lg={12}>
             <div className={styles.card}>
                 <div className={styles.cardHeader}>
                     <span className={styles.icon}>{icon}</span>

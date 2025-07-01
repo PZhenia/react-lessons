@@ -9,7 +9,6 @@ export default function About() {
     return (
         <>
             <div className={styles.container}>
-                <div className={styles.backgroundShape}></div>
                 <Row align={'middle'} className={styles.introRow}>
                     <Col span={24} className={styles.greetingContainer}>
                         <div className={styles.greeting}>
@@ -39,7 +38,6 @@ export default function About() {
                                 Frontend Basic у школі Hillel, де ознайомилася з базовими принципами веб-розробки, а
                                 нині навчаюсь на курсі Frontend Pro, який орієнтований на роботу з реальними проєктами
                                 та сучасними фреймворками."
-                        span={5}
                     />
                     <AboutCard
                         title='💼 Досвід'
@@ -49,7 +47,6 @@ export default function About() {
                                 проєкту, використовуючи React, та працювала з бекендом на Express. Цей досвід навчив
                                 мене співпрацювати в команді, планувати структуру застосунку, працювати з API та
                                 вирішувати нетривіальні задачі у реальному коді."
-                        span={5}
                     />
                     <AboutCard
                         title='✨ Про мене'
@@ -58,7 +55,6 @@ export default function About() {
                                 намагаюся бути уважною до деталей і водночас не забувати про загальну картину. Мені
                                 цікаво поєднувати технічну складову з креативністю, саме тому мене так захоплює
                                 фронтенд — це простір, де логіка зустрічається з дизайном.'
-                        span={5}
                     />
                     <AboutCard
                         title='🎈 Хобі'
@@ -66,7 +62,6 @@ export default function About() {
                                 просто активно проводити час із друзями. Також мені подобається малювати, грати в
                                 настільні ігри, шахи, читати книжки та відкривати для себе щось нове. Хобі допомагають
                                 мені підтримувати баланс між навчанням, роботою над собою та відпочинком.'
-                        span={5}
                     />
                 </Row>
             </div>
